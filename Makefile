@@ -11,3 +11,4 @@ lint:
 	gofmt -s -w . slugify
 	golint .
 	golint slugify
+	go vet

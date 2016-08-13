@@ -14,7 +14,7 @@ func testSlugify(t *testing.T, input, expect string) {
 
 func check(t *testing.T, ret, expect string) {
 	if ret != expect {
-		t.Errorf("Expected %r, got %r", expect, ret)
+		t.Errorf("Expected %v, got %v", expect, ret)
 	}
 }
 
@@ -37,7 +37,7 @@ func TestSlugify(t *testing.T) {
 		{`C\'est déjà l\'été.`, "c-est-deja-l-ete"},
 	}
 	for _, c := range cases {
-		log.Printf("input %r, expect %r", c.input, c.expect)
+		log.Printf("input %v, expect %v", c.input, c.expect)
 		testSlugify(t, c.input, c.expect)
 	}
 }
