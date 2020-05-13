@@ -1,10 +1,10 @@
 go-slugify
 ==============
 
-[![Build Status](https://travis-ci.org/mozillazg/go-slugify.svg?branch=master)](https://travis-ci.org/mozillazg/go-slugify)
-[![Coverage Status](https://coveralls.io/repos/mozillazg/go-slugify/badge.svg?branch=master)](https://coveralls.io/r/mozillazg/go-slugify?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mozillazg/go-slugify)](https://goreportcard.com/report/github.com/mozillazg/go-slugify)
-[![GoDoc](https://godoc.org/github.com/mozillazg/go-slugify?status.svg)](https://godoc.org/github.com/mozillazg/go-slugify)
+[![Build Status](https://travis-ci.org/shopsmart/go-slugify.svg?branch=master)](https://travis-ci.org/shopsmart/go-slugify)
+[![Coverage Status](https://coveralls.io/repos/shopsmart/go-slugify/badge.svg?branch=master)](https://coveralls.io/r/shopsmart/go-slugify?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shopsmart/go-slugify)](https://goreportcard.com/report/github.com/shopsmart/go-slugify)
+[![GoDoc](https://godoc.org/github.com/shopsmart/go-slugify?status.svg)](https://godoc.org/github.com/shopsmart/go-slugify)
 
 Make Pretty Slug.
 
@@ -13,15 +13,15 @@ Installation
 ------------
 
 ```
-go get -u github.com/mozillazg/go-slugify
+go get -u github.com/shopsmart/go-slugify
 ```
 
 Install CLI tool:
 
 ```
-go get -u github.com/mozillazg/go-slugify/slugify
-$ slugify "北京kožušček,abc"
-bei-jing-kozuscek-abc
+go get -u github.com/shopsmart/go-slugify/slugify
+$ slugify "Brad's Deals & abc"
+brads-deals-abc
 ```
 
 
@@ -40,12 +40,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/mozillazg/go-slugify"
+	"github.com/shopsmart/go-slugify"
 )
 
 func main() {
-	s := "北京kožušček,abc"
+	s := "Brad's Deals & abc"
 	fmt.Println(slugify.Slugify(s))
-	// Output: bei-jing-kozuscek-abc
+	// Output: brads-deals-abc
 }
 ```

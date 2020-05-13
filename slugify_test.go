@@ -1,7 +1,9 @@
 package slugify
 
-import "testing"
-import "log"
+import (
+	"log"
+	"testing"
+)
 
 type testCase struct {
 	input, expect string
@@ -35,6 +37,7 @@ func TestSlugify(t *testing.T) {
 		{"北京kožušček", "bei-jing-kozuscek"},
 		{"Nín hǎo. Wǒ shì zhōng guó rén", "nin-hao-wo-shi-zhong-guo-ren"},
 		{`C\'est déjà l\'été.`, "c-est-deja-l-ete"},
+		{`Brad's Deals`, "brads-deals"},
 	}
 	for _, c := range cases {
 		log.Printf("input %v, expect %v", c.input, c.expect)

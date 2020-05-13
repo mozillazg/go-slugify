@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/mattn/go-isatty"
-	"github.com/mozillazg/go-slugify"
+	"github.com/shopsmart/go-slugify"
 )
 
 func main() {
