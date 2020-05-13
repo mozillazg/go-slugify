@@ -1,5 +1,7 @@
 # Changelog
 
+## 0.2.1 (2020-05-13)
+* Add `InvalidCharReplacement` variable
 
 ## 0.2.0 (2016-08-14)
 

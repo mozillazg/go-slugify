@@ -25,7 +25,7 @@ var ReDupSeparatorChar = regexp.MustCompile(fmt.Sprintf("%s{2,}", SeparatorForRe
 
 // Version return version
 func Version() string {
-	return "0.2.0"
+	return "0.2.1"
 }
 
 // Slugify implements make a pretty slug from the given text.
